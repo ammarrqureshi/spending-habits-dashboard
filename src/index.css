@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700;900&family=Onest:wght@400;600;700&family=Poppins:wght@400;500;600;900&family=Raleway:wght@300;400;500;600;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+background-color: rgb(240, 240, 240) !important;;
+}
+
+
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+ 
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #dadada; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #a7a6a6; /* Color of the scrollbar thumb on hover */
+  }
+
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: dotFlashing 1s infinite linear alternate;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes dotFlashing {
+    0% {
+      opacity: 0.2;
+    }
+    50%,
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* App.css */
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+  
